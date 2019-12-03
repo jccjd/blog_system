@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blogs</title>
+</head>
+<body>
+<div class="header">
+    <h1 align="center">Blogs</h1>
+</div>
+    {% for blog in blogs %}
+        <div class="blog">
+            <div class="title">
+                <a href="{% url 'detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
+            </div>
+        <div class="info">
+            <span class="author" style="color: red">author:{{ blog.author }}</span>
+            <span class="created" style="color: green">time: {{ blog.created }}</span>
+        </div>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
