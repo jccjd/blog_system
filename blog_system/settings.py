@@ -25,7 +25,7 @@ SECRET_KEY = '&94p)u*#%m$uh9psq^-vzlbpv0dk+t#qh5j!7*htcz_g!*zfe%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 # Application definition
 import dj_database_url
 db_from_env = dj_database_url.config()
